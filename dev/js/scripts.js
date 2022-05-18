@@ -14,7 +14,7 @@ gsap.registerPlugin (MotionPathHelper);
 const mainTL = gsap.timeline();
 
  mainTL
- .from (".swirl", {duration:3, x:200})
+ .from (".swirl", {duration:.75,xPercent:-50, rotation:360, alpha:0})
  //.fromTo(".swirl", {duration: 3, drawSVG:0})
  
 //  function setStage(){
