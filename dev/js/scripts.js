@@ -14,22 +14,23 @@ gsap.registerPlugin (MotionPathHelper);
 const mainTL = gsap.timeline();
 
  mainTL
+ .from (".swirl", {duration:3, x:200})
  //.fromTo(".swirl", {duration: 3, drawSVG:0})
  
- function setStage(){
-    let tl = gsap.timeline();
+//  function setStage(){
+//     let tl = gsap.timeline();
 
-    tl.set(".swirl", {x:"-=175", alpha:0})
-    tl.set(".side", {x:"-=175", alpha:0})
-    tl.set(".handle", {x:"-=175", alpha:0})
+//     tl.set(".swirl", {x:"-=175", alpha:0})
+//     tl.set(".side", {x:"-=175", alpha:0})
+//     tl.set(".handle", {x:"-=175", alpha:0})
 
-    ;
+//     ;
+
+
+//     return tl;
 
     
-    return tl;
-
-    
-    }
+//     }
 
  mainTL.add()
 

@@ -9,21 +9,11 @@
   ],
   "creatorBuild" : "34127",
   "files" : {
-    "\/deploy\/assets\/coffeecup-line (1).svg" : {
+    "\/deploy\/assets\/coffeecup 2.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/deploy\/assets\/coffeecup-line (1).svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/deploy\/assets\/coffeecup(opt).svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/deploy\/assets\/coffeecup(opt).svg",
+      "oAP" : "\/deploy\/assets\/coffeecup 2.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,

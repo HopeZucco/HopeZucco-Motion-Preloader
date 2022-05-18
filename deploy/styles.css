@@ -419,14 +419,18 @@ textarea {
 /* =============
     Footer
 ============= */
-#preloader-container {
+preloader-container {
   position: absolute;
-  height: 100vh;
-  width: 100%;
+  height: 50%;
+  width: 50%;
 }
-#preloader-container div {
+preloader-container div {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+preloader-container svg {
+  height: 50%;
+  width: 50%;
 }
