@@ -1,20 +1,16 @@
-#preloader-container{
- 
+#preloader-container {
+    display: grid;
+    padding:100px;
+    grid-template-areas: ". grid-content .";
+    grid-template-columns: auto 40% auto;
+    height: 100vh;
 
-    position:absolute;
-    height: 50%;
-    width: 50%;
-    div{
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
+    @include xl {
+        grid-template-columns: auto 400px auto;
     }
 
-    svg{
-        height: 50%;
-        width: 50%;
-
-       //color: black;
+    >div {
+        grid-area: grid-content;
     }
+
 }
