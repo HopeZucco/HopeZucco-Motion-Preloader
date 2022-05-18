@@ -1,5 +1,5 @@
 import { gsap } from "gsap";
-import { GSDevTools } from "gsap/MorphSVGPlugin";
+import { GSDevTools } from "gsap/GSDevTools";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 import { MotionPathHelper } from "gsap/MotionPathHelper";
@@ -13,14 +13,31 @@ gsap.registerPlugin (MotionPathHelper);
 
 const mainTL = gsap.timeline();
 
-maintTL.from("#swirl", {duration: 3, drawSVG:0})
+ mainTL
+ //.fromTo(".swirl", {duration: 3, drawSVG:0})
+ 
+ function setStage(){
+    let tl = gsap.timeline();
+
+    tl.set(".swirl", {x:"-=175", alpha:0})
+    tl.set(".side", {x:"-=175", alpha:0})
+    tl.set(".handle", {x:"-=175", alpha:0})
+
+    ;
+
+    
+    return tl;
+
+    
+    }
+
+ mainTL.add()
+
+
+ ;
 
 
 
-;
 
 
-
-
-
-GSDevTools.create();
+GSDevTools.create()
