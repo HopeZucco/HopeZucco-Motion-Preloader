@@ -14,15 +14,19 @@ const mainTL = gsap.timeline();
  
  function setStage(){
     let tl = gsap.timeline();
-    
-tl
-.fromTo(".swirl", {drawSVG:"0%"}, {fillOpacity:0, duration: 1, drawSVG:"100%"}, "+=0.1")
-.fromTo(".side", {drawSVG:"0%", duration: 0}, {fillOpacity:0, duration: 2, drawSVG:"100%"}, "+=0.1")
-.fromTo(".handle", {drawSVG:"0%", duration: 0}, {fillOpacity:0, duration: 2, drawSVG:"100%"}, "+=0.1")
-.Fromto(".swirl", 3, {fillOpacity: 1, strokeOpacity: 0})
-.Fromto(".side", 3, {fillOpacity: 1, strokeOpacity: 0})
-.to(".handle", 3, {fillOpacity: 1, strokeOpacity: 0})
 
+    
+//reset the thing 
+tl
+
+.to(".swirl", {drawSVG:"0%", strokeWidth: 2, fillOpacity: 0, duration: 0})
+.to(".handle", {drawSVG:"0%", strokeWidth: 2, fillOpacity: 0, duration: 0})
+.to(".side", {drawSVG:"0%", strokeWidth: 2, fillOpacity: 0, duration: 0})
+.to(".swirl", {fillOpacity: 0, strokeWidth: 2, duration: 0})
+//animate the lines and the fill 
+.to(".swirl", {drawSVG:"100%", fillOpacity: 1, duration: 2}, 'animateConcurrently')
+.to(".side", {drawSVG:"100%", fillOpacity: 1, duration: 2, delay: 1}, 'animateConcurrently')
+.to(".handle", {drawSVG:"100%", fillOpacity: 1, duration: 2, delay: 1.5}, 'animateConcurrently')
     // tl
     // .set(".swirl", {x:"-=175", alpha:0})
     // .set(".side", {x:"-=175", alpha:0})
