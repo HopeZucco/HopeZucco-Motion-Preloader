@@ -32,7 +32,9 @@ function firstAnimation(){
     
         tl
         //.from (".swirl", {duration:.75, xPercent:-50, rotation:360, alpha:0})
-        .to(".swirl", {duration:3, x:0, alpha:1})
+        .to(".swirl", {duration:1.5, x:0, alpha:1})
+        .to(".side", {duration:1, x:0, alpha:1})
+        .to(".handle", {duration:1, x:0, alpha:1})
 
         //.to(".swirl", {duration: 3, drawSVG:"0% 100%"})
 
