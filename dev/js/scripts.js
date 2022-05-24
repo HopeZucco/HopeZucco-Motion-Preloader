@@ -23,6 +23,13 @@ tl
 .to(".handle", {drawSVG:"0%", strokeWidth: 2, fillOpacity: 0, duration: 0})
 .to(".side", {drawSVG:"0%", strokeWidth: 2, fillOpacity: 0, duration: 0})
 .to(".swirl", {fillOpacity: 0, strokeWidth: 2, duration: 0})
+
+//fillpath
+.to(".swirlpath", {drawSVG:"0%", strokeWidth: 5, fillOpacity: 0, duration: 0})
+.to(".handlepath", {drawSVG:"0%", strokeWidth: 5, fillOpacity: 0, duration: 0})
+.to(".sidepath", {drawSVG:"0%", strokeWidth: 3, fillOpacity: 0, duration: 0})
+.to(".swirlpath", {fillOpacity: 0, strokeWidth: 5, duration: 0})
+
 //animate the lines and the fill 
 .to(".swirl", {drawSVG:"100%", fillOpacity: 1, duration: 2}, 'animateConcurrently')
 .to(".side", {drawSVG:"100%", fillOpacity: 1, duration: 2, delay: 1}, 'animateConcurrently')
@@ -32,8 +39,9 @@ tl
     // .set(".side", {x:"-=175", alpha:0})
     // .set(".handle", {x:"-=175", alpha:0})
 
-
     //  ;ko 
+
+// .from(".swirl", {fillOpacity: 0, strokeWidth: 2, duration: 0})
 
     return tl;
 
