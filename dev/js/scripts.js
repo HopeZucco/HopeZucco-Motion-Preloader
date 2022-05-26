@@ -40,7 +40,7 @@ tl
 .to(".swirl", {drawSVG:"100%", fillOpacity: 1, duration: 2}, 'animateConcurrently')
 .to(".side", {drawSVG:"100%", fillOpacity: 1, duration: 2, delay: 1}, 'animateConcurrently')
 .to(".handle", {drawSVG:"100%", fillOpacity: 1, duration: 2, delay: 1.5}, 'animateConcurrently')
-.to(".steam", {drawSVG:"100%", fillOpacity: 1, duration: 2, delay: 2}, 'animateConcurrently')
+.to(".steam", {drawSVG:"100%", fillOpacity: 1, duration: 2, delay: 1.9}, 'animateConcurrently')
     // tl
     // .set(".swirl", {x:"-=175", alpha:0})
     // .set(".side", {x:"-=175", alpha:0})
@@ -62,11 +62,27 @@ function firstAnimation(){
         // .to(".swirl", {duration:3, x:0, alpha:1})
 
         //.to(".swirl", {duration: 3, drawSVG:"0% 100%"})
+        // .to(".steam", {drawSVG:"100%", fillOpacity: 0, duration: 2)
+        //
+        // .to(".steam", {drawSVG:"100%", fillOpacity: 1, duration: 2})
+        .to(".steam", {alpha: 0, duration:1})
+        .to(".steam", {drawSVG:"0%", fillOpacity: 0, duration: 0})
+        .to(".steam", {drawSVG:"100%", fillOpacity: 1, duration: 0})
+        tl.repeat(4)
 
-        
-        ;
     
+        ;
+       
+
+
         return tl;
+
+        // //gets current repeat value
+        // var repeat = tl.repeat(); 
+
+        // //sets repeat to 2
+        // tl.repeat(0);
+
     
         }
 
