@@ -6,7 +6,7 @@
     height: 100vh;
 
     @include xl {
-        grid-template-columns: auto 400px auto;
+        grid-template-columns: auto 300px auto;
     }
 
     >div {
