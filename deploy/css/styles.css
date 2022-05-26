@@ -426,7 +426,6 @@ textarea {
   grid-template-columns: auto 40% auto;
   height: 100vh;
   stroke: #8C5845;
-  stroke-width: 5px;
 }
 @media (min-width: 1200px) {
   #preloader-container {
